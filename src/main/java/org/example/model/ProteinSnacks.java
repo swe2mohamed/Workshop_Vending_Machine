@@ -2,10 +2,10 @@ package org.example.model;
 
 public final class ProteinSnacks extends Product{
     // Field
-    private final ProteinSnacks_ProteinContent proteinSnacksProteinContent;
-    public ProteinSnacks(int id, double price, String productName,ProteinSnacks_ProteinContent proteinSnacksProteinContent) {
+    private final ProteinContent ProteinSnacks;
+    public ProteinSnacks(int id, double price, String productName, ProteinContent ProteinSnacks) {
         super(id, price, productName);
-        this.proteinSnacksProteinContent = proteinSnacksProteinContent;
+        this.ProteinSnacks = ProteinSnacks;
     }
 
     // Constructor
@@ -13,20 +13,12 @@ public final class ProteinSnacks extends Product{
     // Methods
     @Override
     public String examine() {
-        return super.examine() + ", ProteinContent: " + proteinSnacksProteinContent.getProteinContent() + ", IsGlutenFree: " + proteinSnacksProteinContent.isGlutenFree();
+        return "ProteinContent: " + ProteinSnacks.getProteinContent() + ", IsGlutenFree: " + ProteinSnacks.isGlutenFree();
     }
 
     @Override
     public String use() {
         return "You eat the protein snacks.";
     }
-/*
-    class ProteinSnacks {
-      -proteinContent : int
-      -isGlutenFree : boolean
-      +examine() : String
-    }
-     */
-
 
 }

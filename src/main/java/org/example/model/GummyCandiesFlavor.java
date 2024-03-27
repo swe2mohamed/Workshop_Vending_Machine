@@ -1,6 +1,6 @@
 package org.example.model;
 
-public enum GummyCandies_GummyCandiesFlavor {
+public enum GummyCandiesFlavor {
     SMART_SWEET("Fruit",false),
     SQUISH("Sour",false),
     VEGAN_BEARS("ORANGE", true)
@@ -8,7 +8,7 @@ public enum GummyCandies_GummyCandiesFlavor {
     private final String flavor;
     private final boolean isVegan;
 
-    GummyCandies_GummyCandiesFlavor(String flavor, boolean isVegan){
+    GummyCandiesFlavor(String flavor, boolean isVegan){
         this.flavor = flavor;
         this.isVegan = isVegan;
     }

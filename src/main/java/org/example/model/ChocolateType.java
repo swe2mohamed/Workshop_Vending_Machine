@@ -1,6 +1,6 @@
 package org.example.model;
 
-public enum ChocolateBars_ChocolateType {
+public enum ChocolateType {
         MILK,
         DARK,
         WITH_NUTS,

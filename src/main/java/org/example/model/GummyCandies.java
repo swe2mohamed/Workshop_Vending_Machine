@@ -14,7 +14,7 @@ public final class GummyCandies extends Product{
 
     @Override
     public String examine() {
-        return super.examine() + ", Flavor: " + flavor + ", IsVegan: " + isVegan;
+        return "Flavor: " + flavor + ", IsVegan: " + isVegan;
     }
 
     @Override

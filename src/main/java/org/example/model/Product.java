@@ -2,6 +2,7 @@ package org.example.model;
 
 public abstract class Product {
     // Field
+    //// make private
     int id;
     double price;
     String productName;
@@ -19,19 +20,28 @@ public abstract class Product {
         return id;
     }
 
+    // Remove
+    /*
     public void setId(int id) {
         // todo
         this.id = id;
     }
 
+     */
+
     public double getPrice() {
         return price;
     }
 
+
+    // Remove setPricse
+    /*
     public void setPrice(double price) {
         // todo
         this.price = price;
     }
+    */
+
 
     public String getProductName() {
         return productName;
@@ -42,10 +52,7 @@ public abstract class Product {
         this.productName = productName;
     }
 
-    public String examine(){
-        // todo: return name and price
-        return "ItemId: " + id + ",Price: " + price + ", ProductName: " + productName;
-    }
+    public abstract String examine();
 
     public abstract String use();
 

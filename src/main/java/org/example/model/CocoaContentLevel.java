@@ -1,6 +1,6 @@
 package org.example.model;
 
-public enum ChocolateBars_CocoaContentLevel {
+public enum CocoaContentLevel {
         HIGH,
         MEDIUM,
         LOW
