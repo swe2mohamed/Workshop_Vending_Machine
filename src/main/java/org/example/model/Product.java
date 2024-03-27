@@ -1,6 +1,6 @@
 package org.example.model;
 
-public abstract class Product {
+public abstract class Product implements IProduct{
     // Field
     //// make private
     int id;
@@ -13,48 +13,26 @@ public abstract class Product {
         this.price = price;
         this.productName = productName;
     }
+
     // Methods
-
-
-    public int getId() {
-        return id;
+    int getId() {
+        return 0;
     }
 
-    // Remove
-    /*
-    public void setId(int id) {
-        // todo
-        this.id = id;
+    String getProductName() {
+        return null;
     }
 
-     */
+    void setProductName(String productName) {
 
-    public double getPrice() {
-        return price;
     }
 
-
-    // Remove setPricse
-    /*
-    public void setPrice(double price) {
-        // todo
-        this.price = price;
-    }
-    */
-
-
-    public String getProductName() {
-        return productName;
+    double getPrice() {
+        return 0;
     }
 
-    public void setProductName(String productName) {
-        // todo
-        this.productName = productName;
+    void setPrice(double price) {
     }
-
-    public abstract String examine();
-
-    public abstract String use();
 
 }
 

@@ -2,25 +2,28 @@ package org.example.model;
 
 public final class ChocolateBars extends Product{
     // Field
-    private final ChocolateType ChocolateType;
-    private final CocoaContentLevel CocoaContentLevel;
+    private ChocolateType chocolateType;
+    private CocoaContentLevel cocoaContentLevel;
+
 
     // Constructor
-    public ChocolateBars(int id, double price, String productName, ChocolateType ChocolateType, CocoaContentLevel CocoaContentLevel) {
+    public ChocolateBars(int id, double price, String productName, ChocolateType chocolateType, CocoaContentLevel cocoaContentLevel) {
         super(id, price, productName);
-        this.ChocolateType = ChocolateType;
-        this.CocoaContentLevel = CocoaContentLevel;
+        this.chocolateType = chocolateType;
+        this.cocoaContentLevel = cocoaContentLevel;
     }
-    // Methods
 
+
+    // Methods
     @Override
     public String examine() {
-        return "ChocolateType: " + ChocolateType + ", CocoaContentLevel: " + CocoaContentLevel;
+        return null;
     }
 
     @Override
     public String use() {
-        return "You choose " + this.ChocolateType + " chocolate bars has " + CocoaContentLevel + " level from Cocoa";
+        return null;
     }
+
 }
 
