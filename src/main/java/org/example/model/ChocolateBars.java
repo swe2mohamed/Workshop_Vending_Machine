@@ -2,8 +2,8 @@ package org.example.model;
 
 public final class ChocolateBars extends Product{
     // Field
-    private ChocolateType chocolateType;
-    private CocoaContentLevel cocoaContentLevel;
+    private final ChocolateType chocolateType;
+    private final CocoaContentLevel cocoaContentLevel;
 
 
     // Constructor
@@ -17,7 +17,7 @@ public final class ChocolateBars extends Product{
     // Methods
     @Override
     public String examine() {
-        return null;
+        return super.examine() + " , ChocolateType: " + chocolateType + " , CocoaContentLevel: " + cocoaContentLevel;
     }
 
     @Override

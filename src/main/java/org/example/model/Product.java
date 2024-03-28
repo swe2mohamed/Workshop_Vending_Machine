@@ -34,5 +34,14 @@ public abstract class Product implements IProduct{
     void setPrice(double price) {
     }
 
+    @Override
+    public String examine() {
+        return "Product ID: " + getId() + ", Product Name: " + getProductName() + "Product Price: " + getPrice();
+    }
+
+    @Override
+    public String use() {
+        return null;
+    }
 }
 

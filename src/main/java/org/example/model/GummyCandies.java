@@ -2,7 +2,7 @@ package org.example.model;
 
 public final class GummyCandies extends Product{
     // Field
-    private GummyCandiesFlavor gummyCandiesFlavor;
+    private final GummyCandiesFlavor gummyCandiesFlavor;
 
     // Constructor
     public GummyCandies(GummyCandiesFlavor gummyCandiesFlavor , int id, double price, String productName) {
@@ -12,11 +12,9 @@ public final class GummyCandies extends Product{
 
 
     // Methods
-
-
     @Override
     public String examine() {
-        return null;
+        return super.examine() + " ,Flavor: " + gummyCandiesFlavor.getFlavor() + ", isVegan: " + gummyCandiesFlavor.isVegan();
     }
 
     @Override
